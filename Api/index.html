@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>Latest News</h1>
+    </header>
+    
+    <section class="controls">
+        <select id="category-select">
+            <option value="">All Categories</option>
+            <option value="technology">Technology</option>
+            <option value="sports">Sports</option>
+            <option value="business">Business</option>
+        </select>
+        
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search news...">
+            <button id="search-btn">🔍</button>
+        </div>
+    </section>
+
+    <section class="news-container" id="news-container">
+        <div class="loading-spinner" id="loading-spinner">Loading...</div>
+        <div class="error-message" id="error-message"></div>
+    </section>
+
+    <div id="pagination"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
